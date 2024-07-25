@@ -1,0 +1,17 @@
+:root {
+    --primary: #E85F5C;
+    --secondary: #9CFFFA;
+    --header-height: 4rem;
+}
+button {
+    border: none;
+    outline: none;
+}
+body {
+    background-color: #172A3A;
+}
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
