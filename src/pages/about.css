@@ -1,0 +1,46 @@
+.about {
+    color: var(--text-color);
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+.about img {
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.entry-text-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.about h4 {
+    color: white;
+    font-size: 3rem;
+}
+.about p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.about h5 {
+    font-size: 2rem;
+    color: white;
+}
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+.about .stack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;;
+}
+.about .stack-img {
+    width: 100px;
+    height: 100px;
+}

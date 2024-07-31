@@ -1,17 +1,70 @@
 :root {
-    --primary: #E85F5C;
+    --text-color: #c3c0c0;
+    --primary: #0A0908;
     --secondary: #9CFFFA;
+    --third: #5F00BA;
     --header-height: 4rem;
+    --content-width: 40%;
 }
 button {
     border: none;
     outline: none;
 }
 body {
-    background-color: #172A3A;
+    background-color: var(--primary);
+    font-family: 'kanit';
 }
 * {
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
+}
+.section { 
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--content-width)
+}
+@font-face {
+    font-family: 'kanit';
+    src: url(./public/Kanit-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url(./public/Kanit-Medium.ttf);
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url(./public/Kanit-SemiBold.ttf);
+    font-weight: semi-bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url(./public/Kanit-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@media only screen and (max-width: 1100px) {
+    :root {
+        --content-width: 50%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    :root {
+        --content-width: 60%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    :root {
+        --content-width: 80%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    :root {
+        --content-width: 95%;
+    }
 }

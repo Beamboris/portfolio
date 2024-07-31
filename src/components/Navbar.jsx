@@ -1,40 +1,40 @@
-import React, { useState } from 'react';
-import './navbar.css'
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoIosClose } from "react-icons/io";
+import "./navbar.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen ] = useState(false)
-    
-    const handleOpen = () => {
-        setIsOpen(!isOpen)
-    }
-
-    const NavLinks = () => {
-        return(
-        <>
-            <a href="">home</a>
-            <a href="">about</a>
-            <a href="">projects</a>
-        </>
-        )
-    }
-
   return (
-    <header>
-        <nav>
+    <header className="section">
+      <NavLink to={"/"}>
         <h1>Boris.dev</h1>
-        <div className={`links-container ${isOpen && "links-container-open"}`} >
-            <NavLinks />
-            <button className='cv'>
-                Download CV
-            </button>
-        </div>
-        <button onClick={handleOpen} className='mobile-menu-icons'>{isOpen ? <IoIosClose /> : <GiHamburgerMenu />}</button>
-        </nav>
-
+      </NavLink>
+      <div className="links-container">
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+          to="/about"
+        >
+          About
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+          to="/projects"
+        >
+          Projects
+        </NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
+          to="/contact"
+        >
+          Contact
+        </NavLink>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
