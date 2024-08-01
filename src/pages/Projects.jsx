@@ -9,7 +9,7 @@ const Projects = () => {
     <div className="projects section">
       <h3>Here you can find some of my projects</h3>
 
-      <h5>CinemaScope</h5>
+
       <div className="project">
         <img src={cinemaScope} alt="Cinemascope" />
         <div className="overlay">
@@ -19,13 +19,14 @@ const Projects = () => {
           </p>
           <div className="icons">
           <span><img src={githubIcon} alt="" /></span>
-          <p>Code</p>
+          <p>Code</p> 
           <span><img className="smaller" src={browserIcon} alt="" /></span>
-          <p>Live Website</p>
+          <a href="https://cinemascopee.netlify.app/">Live Website</a>
           </div>
         </div>
       </div>
       </div>
+      <h5>CinemaScope</h5>
     </div>
   );
 };

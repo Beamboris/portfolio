@@ -26,25 +26,25 @@ body {
 }
 @font-face {
     font-family: 'kanit';
-    src: url(./public/Kanit-Regular.ttf);
+    src: url(/Kanit-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'kanit';
-    src: url(./public/Kanit-Medium.ttf);
+    src: url(/Kanit-Medium.ttf);
     font-weight: medium;
     font-style: normal;
 }
 @font-face {
     font-family: 'kanit';
-    src: url(./public/Kanit-SemiBold.ttf);
+    src: url(/Kanit-SemiBold.ttf);
     font-weight: semi-bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'kanit';
-    src: url(./public/Kanit-Bold.ttf);
+    src: url(/Kanit-Bold.ttf);
     font-weight: bold;
     font-style: normal;
 }

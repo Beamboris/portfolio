@@ -12,10 +12,8 @@
     margin-bottom: 1rem;
 }
 .project {
-
     display: flex;
     position: relative;
-    box-shadow: 0 0 5px 5px var(--third);
 }
 .project:hover {
     margin: 0;
