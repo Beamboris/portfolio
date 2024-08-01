@@ -14,7 +14,7 @@ const Navbar = () => {
       <NavLink to={"/"}>
         <h1>Boris.dev</h1>
       </NavLink>
-      <div className={`links-container ${menuOpen && "links-container-open"}`}>
+      <div className={`links-container ${menuOpen && "links-container-open"}  `}>
         <NavLink
           onClick={() => handleMenu()} className={({ isActive }) =>
             isActive ? "nav-link active" : "nav-link"
