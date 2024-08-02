@@ -18,7 +18,7 @@
 .project:hover {
     margin: 0;
 }
-.project img {
+.cinemascope {
     width: 100%;
     height: 100%;
 }
@@ -52,17 +52,20 @@
     gap: 1rem;
     margin-top: 1.2rem;
 }
-.case-study .smaller {
-    width: 40px;
-    height: 40px;
-}
 .case-study .icon {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.25rem
 }
+.icon img {
+    width: 30px;
+    height: 30px;
+}
 .icons a {
+    color: var(--text-color);
+}
+.icons a:hover {
     color: white;
 }
 .tech {

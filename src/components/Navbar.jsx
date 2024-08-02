@@ -4,7 +4,7 @@ import { FaHamburger } from "react-icons/fa";
 import { useState } from "react";
 
 const Navbar = () => {
-  const [ menuOpen, setMenuOpen ] = useState('false');
+  const [ menuOpen, setMenuOpen ] = useState(false);
   const handleMenu = () => {
     setMenuOpen(!menuOpen)
   }

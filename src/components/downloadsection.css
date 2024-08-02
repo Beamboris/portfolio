@@ -1,6 +1,11 @@
 .download {
     margin-top: 10rem;
     color: var(--text-color);
+    padding-bottom: 2rem;
+}
+.download a {
+  text-decoration: none;
+  
 }
 .download h2{
     text-align: center;
@@ -106,7 +111,6 @@
 @media (max-width: 508px) {
   .download-buttons,
   .download-buttons:after {
-    font-size: 0.9rem;
     width: 176px;
     height: 76px;
     line-height: 78px;

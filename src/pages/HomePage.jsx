@@ -1,6 +1,6 @@
-import React from 'react'
-import Profile from '../components/Profile'
-import DownloadSection from '../components/DownloadSection'
+import React from 'react';
+import Profile from '../components/Profile';
+import DownloadSection from '../components/DownloadSection';
 
 const HomePage = () => {
   return (

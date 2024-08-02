@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --text-color: #c3c0c0;
     --primary: #0A0908;
@@ -12,7 +14,8 @@ button {
 }
 body {
     background-color: var(--primary);
-    font-family: 'kanit';
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     font-size: 1.3rem;
 }
 * {
@@ -24,30 +27,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: var(--content-width)
-}
-@font-face {
-    font-family: 'kanit';
-    src: url(/src/assets/Kanit-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kanit';
-    src: url(/src/assets/Kanit-Medium.ttf);
-    font-weight: medium;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kanit';
-    src: url(/src/assets/Kanit-SemiBold.ttf);
-    font-weight: semi-bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kanit';
-    src: url(/src/assets/Kanit-Bold.ttf);
-    font-weight: bold;
-    font-style: normal;
 }
 @media only screen and (max-width: 1100px) {
     :root {
