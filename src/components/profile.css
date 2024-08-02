@@ -56,3 +56,8 @@
         justify-content: center;
     }
 }
+@media (max-width: 750px) {
+    .profile {
+      margin-top: var(--header-padding);
+    }
+    }

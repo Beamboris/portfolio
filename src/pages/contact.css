@@ -30,7 +30,6 @@ input {
     font-family: "Oswald", sans-serif;
     font-size: 1.1rem;
     color: var(--text-color);
-
     padding-left: 0.5rem;
     padding-right: 0.3rem;
     border: 1px solid var(--text-color);
@@ -121,11 +120,6 @@ label {
   background: #A46BF5;
 }
 
-
-
-
-@media (min-width: 768px) {
-
 .succes {
   text-align: center;
   margin-top: 2rem;
@@ -135,7 +129,14 @@ label {
 
 }
 
+
+
+@media (max-width: 750px) {
+.contact {
+  margin-top: var(--header-padding);
 }
+}
+
 @media (max-width: 600px) {
   .contact h3{
     text-align: center;
@@ -145,6 +146,9 @@ label {
     gap: 1rem;
     height: fit-content
   } 
+  textarea {
+    padding: 1rem;
+  }
   input {
     padding: 1rem;
   }

@@ -5,8 +5,9 @@
     --primary: #0A0908;
     --secondary: #9CFFFA;
     --third: #5F00BA;
-    --header-height: 4rem;
+    --header-height: 6rem;
     --content-width: 40%;
+    --header-padding: calc(var(--header-height) + 4rem); 
 }
 button {
     border: none;

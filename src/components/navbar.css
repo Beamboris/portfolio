@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
+    height: var(--header-height);
 }
 
 header h1 {
@@ -70,6 +70,13 @@ a {
   }
 }
 @media only screen and (max-width: 750px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
   .hamburger-menu {
       display: block;
   }

@@ -111,6 +111,7 @@
 @media (max-width: 508px) {
   .download-buttons,
   .download-buttons:after {
+    font-size: 0.9rem;
     width: 176px;
     height: 76px;
     line-height: 78px;
