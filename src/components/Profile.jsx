@@ -17,7 +17,7 @@ const Profile = () => {
             <RoughNotation type="circle" color="var(--secondary)">
               Frontend{" "}
             </RoughNotation>
-            <RoughNotation type="underline" color="var(--third)">Web Developer.</RoughNotation>
+            <RoughNotation type="underline" color="var(--third)"><span className="web-dev">Web Developer.</span></RoughNotation>
           </RoughNotationGroup>
         </h1>
         <div className="media-container">

@@ -55,71 +55,88 @@ textarea {
 label {
     font-size: 0.9rem;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
 .submit-btn {
-  appearance: button;
-  background-color: var(--third);
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
-  border: 1px solid var(--third);
-  border-radius: 1rem;
-  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  margin: 2rem auto;
+  width: 200px;
+  align-items: center;
+  appearance: none;
+  border-radius: 4px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 1px -2px,rgba(0, 0, 0, .14) 0 2px 2px 0,rgba(0, 0, 0, .12) 0 1px 5px 0;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: #fff;
   cursor: pointer;
-  display: inline-block;
-  font-family: Inter,sans-serif;
-  font-size: 1rem;
+  display: inline-flex;
+  font-family: Roboto,sans-serif;
+  font-size: .875rem;
   font-weight: 500;
-  line-height: 1.5;
-  margin-top: 2rem;
-  padding: .5rem 1rem;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: .0892857em;
+  line-height: normal;
+  min-width: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 0 16px;
+  position: relative;
   text-align: center;
-  text-transform: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
-}
-
-.submit-btn:focus:not(:focus-visible),
-.submit-btn:focus {
-  outline: 0;
+  will-change: transform,opacity;
 }
 
 .submit-btn:hover {
-  background-color: #3733E5;
-  border-color: #3733E5;
-}
-
-.submit-btn:focus {
-  background-color: #413FC5;
-  border-color: #3E3BBA;
-  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
-}
-
-.submit-btn:active {
-  background-color: #3E3BBA;
-  background-image: none;
-  border-color: #3A38AE;
-  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
-}
-
-.submit-btn:active:focus {
-  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
 }
 
 .submit-btn:disabled {
-  background-image: none;
-  box-shadow: none;
-  opacity: .65;
+  background-color: rgba(0, 0, 0, .12);
+  box-shadow: rgba(0, 0, 0, .2) 0 0 0 0, rgba(0, 0, 0, .14) 0 0 0 0, rgba(0, 0, 0, .12) 0 0 0 0;
+  color: rgba(0, 0, 0, .37);
+  cursor: default;
   pointer-events: none;
 }
+
+.submit-btn:not(:disabled) {
+  background-color: #6200ee;
+}
+
+.submit-btn:focus {
+  box-shadow: rgba(0, 0, 0, .2) 0 2px 4px -1px, rgba(0, 0, 0, .14) 0 4px 5px 0, rgba(0, 0, 0, .12) 0 1px 10px 0;
+}
+
+.submit-btn:active {
+  box-shadow: rgba(0, 0, 0, .2) 0 5px 5px -3px, rgba(0, 0, 0, .14) 0 8px 10px 1px, rgba(0, 0, 0, .12) 0 3px 14px 2px;
+  background: #A46BF5;
+}
+
+
+
+
+@media (min-width: 768px) {
+
 .succes {
   text-align: center;
   margin-top: 2rem;
   color: var(--secondary);
   font-size: 1.2rem;
   padding-bottom: 2rem;
+
+}
+
 }
 @media (max-width: 600px) {
   .contact h3{

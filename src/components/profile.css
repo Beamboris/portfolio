@@ -7,6 +7,9 @@
 .profile h1 {
     font-weight: 400;
 }
+.web-dev {
+    display: inline-block;
+}
 .profile-img {
     background-image: url(/src/assets/portfoliopicture.jpg);
     display: inline-block;
